@@ -19,6 +19,111 @@
         "cells": [
           {
             "position": {
+              "x": 50,
+              "y": 40
+            },
+            "size": {
+              "width": 290,
+              "height": 160
+            },
+            "attrs": {
+              "label": {
+                "text": "User Zone"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "4add8c29-94d2-480d-807c-c17bdc3dc409",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "User Zone ",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "6421efa0-46c1-407d-9356-0117b87062bd"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 339.9999999999998,
+              "y": 80.00000000000031
+            },
+            "size": {
+              "width": 440,
+              "height": 310
+            },
+            "attrs": {
+              "label": {
+                "text": "Application Zone"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "6bb3bc01-b0fb-40b3-b8ae-ec372c72c77a",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Application Zone ",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "88d94bdb-7edc-4bdd-8fb5-91a59fe5278e",
+                "5b28227b-92dc-4220-ae12-0bcedadec2fe"
+              ],
+              "containedElements": [
+                "05ef29dc-d83c-4e36-939b-c8409307e161",
+                "c3d53c5b-7438-4c09-9b71-e46b535073fc"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 795,
+              "y": 80.00000000000031
+            },
+            "size": {
+              "width": 150,
+              "height": 330
+            },
+            "attrs": {
+              "label": {
+                "text": "Storage Zone "
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "239a0940-fd62-49f1-b330-7b055b4a4299",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Storage Zone  ",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "25654e79-f800-4d39-945e-adac8d85e95a",
+                "dd085fcd-740f-4772-9482-24290be846e3"
+              ],
+              "containedElements": [
+                "fa0b800a-0e3f-4d69-9d78-43b907a7a6e1",
+                "6acfa73c-23d8-4c3c-9aba-cb3141467a43"
+              ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
               "x": 80,
               "y": 110
             },
@@ -939,7 +1044,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "6bb3bc01-b0fb-40b3-b8ae-ec372c72c77a"
+              ]
             },
             "labels": [
               "Export Request +\nCUI metadata"
@@ -985,7 +1092,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "6bb3bc01-b0fb-40b3-b8ae-ec372c72c77a"
+              ]
             },
             "labels": [
               "Destination check"
@@ -1123,7 +1232,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "239a0940-fd62-49f1-b330-7b055b4a4299"
+              ]
             },
             "labels": [
               "Hash Record"
@@ -1169,7 +1280,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "239a0940-fd62-49f1-b330-7b055b4a4299"
+              ]
             },
             "labels": [
               "Audit Export Record"
